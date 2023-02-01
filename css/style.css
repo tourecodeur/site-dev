@@ -1,0 +1,643 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+font-family: 'Raleway', sans-serif;
+}
+#loading{
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	background-image: url('https://i.pinimg.com/originals/94/21/ed/9421ed266475536281dfa87c5f15ee57.gif');
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*https://cdn.dribbble.com/users/108183/screenshots/2301400/spinnervlll.gif*/
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+p{
+	font-size: 13px;
+	line-height: 1.6;
+	font-weight: 400;
+	color: black;
+}
+
+i{
+	color: #2fccd0
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+    background-image:linear-gradient(rgb(0 161 245 / 87%), rgb(0 0 0 / 86%)), url("https://blog.stoneriverelearning.com/wp-content/uploads/2017/06/23054.jpg");	background-size: 100% 100%;
+	position: relative;
+	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+}	
+
+
+.header:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: -1;
+	opacity: .3%
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+
+
+
+
+
+
+
+
+.navbar-toggler{
+	color: black;
+}
+
+.navbar:before {
+    content: "";
+ 	content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(30, 87, 153) 0%, rgb(60, 205, 187) 0%, rgb(22, 201, 246) 100%);
+    inset: 20% 0% 7%;
+    z-index: -1;
+}
+
+
+.nav-item a{
+	color: whitesmoke!important;
+	font-weight: bold;
+
+}
+
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+#about-button {
+    background: #0f9abd;
+    border: 1px solid #0f9abd;
+    color: black;
+}
+
+.header-buttons a {
+        border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin: 0px 5px;
+    padding: 7px 12px;
+    outline: none;
+    color: snow;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    transition: all 0.3s ease 0s;;
+}
+
+
+.header-buttons a:hover{
+     background: #0f9abd;
+     color: black;
+     border: 1px solid #0f9abd;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+	font-size: 1.3rem;
+	padding: 10px 0 20px 0;
+	color: white;
+	font-weight: 600;
+}
+
+/**********extra div css start************/
+.header-extea-div{
+	width: 100%;
+	height: 100%;
+	margin: 100 0px;
+	text-align: center;
+
+}
+.extra-div{
+	background: #fff;
+	border: medium none;
+	padding: 31px;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+.extra-div h2, .servicediv h2{
+	font-size: 20px;
+	margin: 18px 0 15px 0;
+	font-weight: bold;
+	line-height: 1.1;
+	word-spacing: 4px;
+}
+
+.extra-div:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20px);
+}
+
+#serviceDiv{
+	overflow: hidden;
+}
+/**********extra div css end************/
+
+/****************Offer Section start***************/
+.service-offers{
+	background: #f7f7f9;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+.hadings{
+	margin-bottom: 50px;
+}
+.hadings h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.names h1{
+	color: #2e2e2e;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.service-icons {
+	position: relative;
+    top: 26px;
+    right: 13px;
+    font-size: 15px;
+}
+.progress{
+	height: 0.6rem!important;
+	margin-bottom: 30px!important
+}
+/****************Offer Section end***************/
+
+ /****************Project done start************** */
+.project-work{
+	margin: 100px 0;
+
+}
+.project-work h1{
+	font-size: 2rem;
+	text-align: center;
+}
+
+
+ /****************Project done end************** */
+
+ /****************Pricing start************** */
+ .pricing{
+ 	width:100%;
+ 	height: 100vh;
+ 	padding: 50px;
+ 	position: relative;
+
+ }
+
+ .pricing:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: -1;
+	background: linear-gradient(160deg, #16c9f6 55%, #fff 0%)
+}
+
+.money{
+	font-size: 2.0rem;
+	line-height: 1;
+	color: #606060;
+}
+.card{
+	transition: 0.4s ease;
+}
+.card-header{
+	font-size: 1.2rem;
+	font-weight: bold;
+	background: #fff!important;
+	padding: 25px 9!important;
+}
+.card-body{
+	padding: 12px 0px!important;
+}
+.card-body li{
+	margin: 5px 0;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #606060;
+}
+.card-footer{
+	background: white!important;
+	padding: 21px 0px!important;
+}
+.card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 40px;
+    margin: 0px 5px;
+    padding: 7px 14px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 17px;
+    font-weight: 900;
+    /* line-height: 1.4; */
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.card:hover .card-footer a{
+     background: #50d1c0;
+     color: #fff;
+     border: 1px solid #50d1c0;
+    text-decoration: none;
+}
+.card:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20px);
+}
+
+.card:hover .card-header, .card:hover .money{
+	color: #50dac0;
+}
+.card-footer a:hover{
+	 background: #fff;
+     color: #50d1c0;
+     border: 1px solid #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+ /****************Pricing end************** */
+
+/**************customer feedback start************/
+
+.happyClients{
+	width: 100%;
+	padding: 80px 0;
+	height: 100vh;
+	background:#f7f7f9;
+
+}
+
+.box{
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow:0px 5px 10px 0 rgba(0,0,0,0.3);
+	border-radius: 2px;
+	transition: 0.3s ease;
+
+}
+.box:hover{
+	background: #15c9f6;
+}
+.box:hover p{
+	color: white;
+}
+.carousel-indicators{
+	position: absolute;
+	right: 0;
+	bottom: -60px!important;
+}
+.carousel-indicators li{
+	background-color: #16c9f6!important;
+}
+.box h1{
+	font-size: 18px;
+	font-weight: 800;
+	color: #000;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.box h2{
+	font-size: 17px;
+	font-weight: 400;
+	color:#666666;
+	margin-bottom: 20px;
+	}
+.box a{
+	position: relative;
+}
+.box a img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 20px
+}
+.box a:after{
+	content: "\f10d";
+	font-family: "Font Awesome 5 Brands";
+	width: 40px;
+	height: 40px;
+	background:linear-gradient(to right, #1e5799 0%, #3cccdbb 0%, #16c9f6 100%);
+	color: white;
+	position: absolute;
+	top: 120%;
+	left: 70%;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/**************customer feedback end************/
+
+/************Contact Us start************/
+
+.contact-us{
+	width: 100%;
+	height:100vh;
+	padding: 80px 0;
+	position: relative;
+}
+.contact-us h2{
+		font-size: 27px;
+		font-weight: bold;
+		color: #000;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+}
+.contact-us:before{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background:linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+	z-index: -1;
+}
+
+.form-button button{
+    border-radius: 100px;
+    margin: 0px 0px;
+    padding: 9px 28px;
+    outline: none;
+    color: transparent;
+    font-size: 0.9rem;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 10px;
+    transition: 0.3s;	
+}
+form:hover .form-button button{
+	background: #fff;
+	color: black;
+}
+.form-button button:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+::placeholders{
+	font-size: 0.85rem;
+}
+
+/************Contact Us End************/
+
+/**************newslater start***********/
+.newslatter{
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+}
+.newslatter h2{
+	font-size: 26px;
+	font-weight: bold;
+}
+.news-input{
+	border-radius: 100px 0px 0px 100px!important;
+	min-width: 150px;
+	min-width: 450px;
+}
+.input-group-text{
+	color: #fff;
+	background: #5bc0de;
+	border-radius: 0% 100px 100px 0;
+	min-width: 80px;
+	min-height: 36px;
+}
+
+/**************newslater end***********/
+
+
+/**************footer-section start***********/
+
+
+.footer-section {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #00abff;
+}
+.footer-section h3{
+		font-style: 28px;
+		font-weight: 400;
+}
+.footer-section p{
+	color: #fff;
+
+}
+.footer-section li a{
+	font-size: 0.7rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+	text-align: center;
+}
+.footer-section h3{
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 22px;
+	padding: 4px;
+	border-bottom: 2px solid #5bc0de;
+	font-size: 0.9rem!important;
+	font-weight: 600;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.link-icons a i{
+	background: transparent;
+	color: #ffffff;
+	margin: 1px;
+	transition: 0.3s;
+}
+
+.link-icons a i:hover{
+	border-radius: 100%;
+	background: transparent;
+}
+
+.fa-facebook:hover{
+	color: #3b5998;
+	border-radius: 100%;
+}
+.fa-instagram:hover{
+	color: rgb(221, 42, 123);
+}
+.fa-linkedin:hover{
+	color: #0e76a8 ;
+}
+.fa-github:hover{
+	color: #333;
+}
+.newslater-main{
+	width: 108%;
+    padding: 0 17px 0px 0px;
+
+}
+
+#myBtn{
+	/*display: none;*/
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border:none;
+	color: #fff;
+	background: #00abff;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s
+}
+#myBtn:hover{
+	background: #606060;
+}
+
+.pricing, .happyClients, .contact-us{
+		height: auto;
+		margin-top: 50px;
+	}
+
+	.card-div{
+		transform: translateY(0);
+		margin: 30px 0px;
+	}
+
+	.footer-text{
+		color:#fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+.newslatter-from{
+	margin-bottom: 4px;
+}
+.newslatter-sub{
+	background: #16c9f6;
+    color: white;
+    width: 100%;
+    border: 1px transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.newslatter-from input:hover{
+	background-color: #bacace;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.newslatter-from button:hover{
+	background: #39a3bd;
+		box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+/**************footer-section end***********/
+
+/************media queries***********/
+@media(max-width: 768px){
+	.nav-item a{
+		text-align: center!important;
+	}
+	.pricing{
+		width: 100%;
+	}
+	.cad .pricing, .happyClients, .contact-us, .extra-div, .servicediv{
+		height: auto;
+		margin-top: 50px;
+	}
+
+	.card-div{
+		transform: translateY(0);
+		margin: 30px 0px;
+	}
+
+	.newslatter-div, .socialLink-div {
+    margin: 15px 0;
+	}
+
+    #newslatter {
+    padding: 0 0 25px 0;
+	}
+
+	#newslatter h2{
+		padding: 25px 0
+	}
+
+	.servicediv {
+    margin: 0 5px;
+	}
+
+	.card-div{
+	padding: 0 0 0 0;
+	}
+
+}
